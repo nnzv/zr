@@ -1,26 +1,26 @@
-# NAME
+## NAME
 
 zr - Enzo's overlay
 
-# DESCRIPTION
+## DESCRIPTION
 
 Ebuild repo which contains additional packages for my Gentoo system. 
 
-# USAGE
+## USAGE
 
 To add, you should have eselect-repository:
 
-```sh
+```
 root # eselect repository add zr git https://git.sr.ht/~nzv/zr
 ````
 
 For issues and syncing matters, [emaint(1)] could be help:
 
-```sh
+```
 root # emaint -r zr
 ````
 
-# LICENSE
+## LICENSE
 
 BSD only, see [LICENSE].
 
