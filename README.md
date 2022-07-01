@@ -17,7 +17,7 @@ root # eselect repository add zr git https://git.sr.ht/~nzv/zr
 For issues and syncing matters, [emaint(1)] could be help:
 
 ```
-root # emaint -r zr
+root # emaint sync -r zr
 ````
 
 ## LICENSE
