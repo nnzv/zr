@@ -10,7 +10,7 @@
 ----
 
 Gentoo overlay can supply general needs for us in default. And even if not, we are allowed to 
-enhance our package ecosystm adding external overlays (e.g, zr):
+enhance our package ecosystem adding external overlays (e.g, zr):
 
 [,txt]
 ----
