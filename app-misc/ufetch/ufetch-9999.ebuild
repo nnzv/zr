@@ -3,22 +3,26 @@
 
 EAPI=7
 
-DESCRIPTION="Tiny system info"
-HOMEPAGE="https://gitlab.com/jschx/ufetch"
-if [[ "${PV}" == *9999 ]]; then
+ESH_PN=github.com/jschx/ufetch
+
+DESCRIPTION="Tiny system info for Unix-like operating systems"
+HOMEPAGE="https://${ESH_PN}"
+
+if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="${HOMEPAGE}.git"
 else
-	SRC_URI="${HOMEPAGE}/-/archive/master/${PN}-master.tar.gz"
+	SRC_URI="${HOMEPAGE}/archive/refs/heads/master.zip -> ${PN}-9999"
+	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 fi
 
 SLOT="0"
 LICENSE="ISC"
-KEYWORDS="~amd64"
 IUSE="doc"
+DOC=( LICENSE README.md )
 
 src_install() {
 	exeinto /usr/bin
 	newexe  ${PN}-gentoo ${PN}
-	use doc && dodoc README.md
+	use doc && einstalldocs
 }
