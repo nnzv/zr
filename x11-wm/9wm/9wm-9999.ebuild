@@ -28,7 +28,7 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 IUSE="doc"
-DOC=( *.{md,txt} )
+DOC=( CREDITS.md CUSTOMIZING.md LICENSE.md README.md TODO.txt )
 
 src_compile() {
 	emake CC="$(tc-getCC)" ${PN}
