@@ -27,7 +27,7 @@ else
 fi
 
 SLOT="0"
-LICENSE="MIT"
+LICENSE="BSD-2"
 BDEPEND="dev-lang/go"
 DEPEND="${BDEPEND}"
 IUSE="doc"
