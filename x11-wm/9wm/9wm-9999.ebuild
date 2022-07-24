@@ -18,7 +18,14 @@ fi
 
 SLOT="0"
 LICENSE="MIT"
-RDEPEND="x11-libs/libX11"
+RDEPEND="
+	x11-libs/libX11
+	x11-libs/libXext
+	x11-libs/libXfixes
+	x11-libs/libXft
+	x11-libs/libXrandr
+	x11-libs/libXrender
+"
 DEPEND="${RDEPEND}"
 IUSE="doc"
 DOC=( *.{md,txt} )
