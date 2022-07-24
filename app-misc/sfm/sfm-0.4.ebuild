@@ -5,6 +5,8 @@ EAPI=7
 
 EC_PN=github.com/afify/sfm
 
+inherit savedconfig
+
 DESCRIPTION="Simple file manager"
 HOMEPAGE="https://git.afify.dev/sfm"
 
