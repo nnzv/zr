@@ -1,25 +1,19 @@
-:wiki: https://wiki.gentoo.org/wiki/User:Shunlir/An_Overlay_Tutorial
-:mang: https://dev.gentoo.org/~zmedico/portage/doc/man/emaint.1.html
-
-[,txt]
-----
+```
   _____ __ 
  |_  / '__|
   / /| |   
  /___|_| /var/db/repos/zr
-----
+```
 
 Gentoo overlay can supply general needs for us in default. And even if not, we are allowed to 
 enhance our package ecosystem adding external overlays (e.g, zr):
 
-[,txt]
-----
+```
 root # eselect repository add zr git https://github.com/nnzv/zr
-----
+```
 
-For issues and syncing matters, {mang}[emaint(1)] could be help:
+For issues and syncing matters, emaint(1) could be help:
 
-[,txt]
-----
+```
 root # emaint sync -r zr
-----
+```
