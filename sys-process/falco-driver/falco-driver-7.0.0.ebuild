@@ -11,8 +11,7 @@ SRC_URI="https://github.com/falcosecurity/libs/archive/${PV}+driver.tar.gz -> ${
 
 LICENSE="GPL2 MIT Apache-2"
 SLOT="0"
-# https://github.com/falcosecurity/libs/tree/7.0.0%2Bdriver
-KEYWORDS="amd64 arm64"
+KEYWORDS="~amd64 ~arm64"
 
 BDEPEND=">=dev-build/cmake-3.12"
 RDEPEND=""
