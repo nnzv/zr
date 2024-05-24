@@ -14,13 +14,8 @@ SLOT="0"
 # https://github.com/falcosecurity/libs/tree/7.0.0%2Bdriver
 KEYWORDS="amd64 arm64"
 
+BDEPEND=">=dev-build/cmake-3.12"
 RDEPEND=""
-# check ${S}/.github/install-deps.sh
-BDEPEND="
-	dev-cpp/valijson
-	dev-libs/re2
-	dev-libs/uthash
-"
 DEPEND="${RDEPEND} ${BDEPEND}"
 
 S="${WORKDIR}/libs-${PV}-driver"
