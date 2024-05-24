@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit linux-mod-r1 linux-info cmake
+inherit linux-mod-r1 cmake
 
 DESCRIPTION="The Falco Kernel Module"
 HOMEPAGE="https://falco.org/blog/choosing-a-driver/#kernel-module"
